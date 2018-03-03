@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.17.1226.1925                               -->
+<workbook source-build='10.5.0 (10500.17.1226.1925)' source-platform='mac' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Personal data viz.csv (Personal data viz)' inline='true' name='federated.1mhgwpz1jn6guc1decjvk1gnou5g' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Personal data viznew' name='excel-direct.1pz7u9q1i09crg13bejtb1wucqfq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/Madhu/Documents/GitHub/Personal-Data-viz/Personal data viznew.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1pz7u9q1i09crg13bejtb1wucqfq' name='Personal data viz.csv' table='[&apos;Personal data viz#csv$&apos;]' type='table'>
+          <columns gridOrigin='A1:P101:no:A1:P101:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Season' ordinal='1' />
+            <column datatype='string' name='City of Residence' ordinal='2' />
+            <column datatype='integer' name='Trip ID' ordinal='3' />
+            <column datatype='string' name='Origin' ordinal='4' />
+            <column datatype='string' name='Destination' ordinal='5' />
+            <column datatype='string' name='International/Domestic' ordinal='6' />
+            <column datatype='integer' name='Number of Travelling Companions' ordinal='7' />
+            <column datatype='integer' name='Distance by road' ordinal='8' />
+            <column datatype='integer' name='Distance by flight' ordinal='9' />
+            <column datatype='string' name='Mode of Travel' ordinal='10' />
+            <column datatype='string' name='Type of Location' ordinal='11' />
+            <column datatype='string' name='Purpose' ordinal='12' />
+            <column datatype='integer' name='Duration (days)' ordinal='13' />
+            <column datatype='string' name='Events' ordinal='14' />
+            <column datatype='string' name='Excitement (1-10)' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City of Residence</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City of Residence]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>City of Residence</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trip ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trip ID]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Trip ID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Origin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Origin]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Origin</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Destination</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Destination]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Destination</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>International/Domestic</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[International/Domestic]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>International/Domestic</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Travelling Companions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Travelling Companions]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Number of Travelling Companions</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance by road</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Distance by road]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Distance by road</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance by flight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Distance by flight]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Distance by flight</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mode of Travel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Mode of Travel]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Mode of Travel</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type of Location]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Type of Location</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purpose</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Purpose]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Purpose</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration (days)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration (days)]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Duration (days)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Events</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Events]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Events</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excitement (1-10)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Excitement (1-10)]</local-name>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias>Excitement (1-10)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Personal data viz.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P101:no:A1:P101:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City of Residence]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Distance1' datatype='string' name='[Distance]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Season1' datatype='string' name='[Season]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Trip ID]' role='dimension' type='ordinal' />
+      <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.538591' measure-ordering='alphabetic' measure-percentage='0.461409' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Season:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Winter&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Summer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fall&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Duration (days)' />
+        <param name='target' value='Sheet 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Personal data viz.csv (Personal data viz)' name='federated.1mhgwpz1jn6guc1decjvk1gnou5g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mhgwpz1jn6guc1decjvk1gnou5g'>
+            <column datatype='string' name='[Destination]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Distance by flight]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Duration (days)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[International/Domestic]' role='dimension' type='nominal' />
+            <column caption='Season1' datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of Location]' role='dimension' type='nominal' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Destination]' derivation='Attribute' name='[attr:Destination:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Duration (days)]' derivation='Attribute' name='[attr:Duration (days):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Distance by flight]' derivation='None' name='[none:Distance by flight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Duration (days)]' derivation='None' name='[none:Duration (days):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[International/Domestic]' derivation='None' name='[none:International/Domestic:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type of Location]' derivation='None' name='[none:Type of Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[attr:Duration (days):qk]' included-values='in-range'>
+            <min>1</min>
+            <max>349</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Year:qk]' included-values='in-range'>
+            <min>2005</min>
+            <max>2015</max>
+          </filter>
+          <slices>
+            <column>[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[attr:Duration (days):qk]</column>
+            <column>[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Distance by flight:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size' field='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Duration (days):ok]' field-type='ordinal' max-size='1' min-size='0.193262' type='catsize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Duration (days):ok]' />
+              <lod column='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Type of Location:nk]' />
+              <shape column='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:International/Domestic:nk]' />
+              <color column='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Season:nk]' />
+              <tooltip column='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[attr:Destination:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9908214807510376' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Distance by flight:qk]</rows>
+        <cols>[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Year:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Duration (days):ok]' type='size' />
+            <card pane-specification-id='1' param='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:Season:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.1mhgwpz1jn6guc1decjvk1gnou5g].[none:International/Domestic:nk]' type='shape' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>
